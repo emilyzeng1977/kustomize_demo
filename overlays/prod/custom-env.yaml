@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: my-nginx
 spec:
-  replicas: 1
+  replicas: 4
   template:
     spec:
       containers:
@@ -11,4 +11,4 @@ spec:
           image: nginx:latest
           env:
             - name: CUSTOM_ENV_VARIABLE
-              value: DEV_ABC
+              value: DEV_abc123
