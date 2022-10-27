@@ -1,17 +1,17 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yace
+  name: karpenter
 spec:
   selector:
     matchLabels:
-      run: yace
+      run: karpenter
   replicas: 2
   template:
     metadata:
       labels:
-        run: yace
+        run: karpenter
     spec:
       containers:
-        - name: yace
-          image: yace
+        - name: karpenter
+          image: XXX
