@@ -6,3 +6,4 @@ bases:
 
 patchesStrategicMerge:
   - custom-env.yaml
+  - custom-port.yaml

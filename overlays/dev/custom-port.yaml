@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-nginx
+  labels:
+    run: my-nginx
+spec:
+  $patch: replace
+  ports:
+    - port: 8081
+      protocol: TCP
+  selector:
+    run: my-nginx
+
